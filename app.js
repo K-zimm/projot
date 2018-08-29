@@ -22,9 +22,7 @@ require('./config/passport')(passport);
 const db = require('./config/database');
 
 // Connect to mongoose
-mongoose.connect(db.mongoURI, {
-    useMongoClient: true
-})
+mongoose.connect(db.mongoURI)
 .then(() => console.log('MongoDB Connected...'))
 .catch(err => console.log(err));
 
