@@ -1,5 +1,8 @@
-if(process.env.NODE_ENV === 'production'){
-    module.exports = {mongoURI: 'mongodb://kylez:aredpeach333@ds137862.mlab.com:37862/projot-prod'}
+if (process.env.NODE_ENV === 'production') {
+  module.exports = {
+    mongoURI:
+      'mongodb+srv://kylez:aredpeach333@node-auth-crud.e0v4t.mongodb.net/projot?retryWrites=true&w=majority',
+  };
 } else {
-    module.exports = {mongoURI: 'mongodb://localhost/projot-dev'}
+  module.exports = { mongoURI: 'mongodb://localhost/projot-dev' };
 }
